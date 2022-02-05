@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Nvidia MSI GeForce 10 Series GT 1030",
+        "price": 23000,
+        "img": "./img/gt 1030.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Teclado Mecanico Redragon Tvastar K566",
+        "price": 3958,
+        "img": "./img/Tvastar K566.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Monitor Gamer 4k Led Samsung 32 Ultra Hd J590",
+        "price": 79999,
+        "img": "./img/monitor 4k.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Mouse de juego Redragon Griffin M607 negro",
+        "price": 1600,
+        "img": "./img/Mouse de juego Redragon Griffin M607 negro.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Auriculares Gamer 4d Microfono Y Luces Rgb",
+        "price": 3150,
+        "img": "./img/Auriculares Gamer 4d Microfono Y Luces Rgb.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Gabinete Gamer Xigmatek Eros Rgb Atx Vidrio Templado",
+        "price": 5100,
+        "img": "./img/Gabinete Gamer Xigmatek Eros Rgb Atx Vidrio Templado.jpg"
+    }
+]

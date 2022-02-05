@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: calibri;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6; }
+
+header {
+  height: 20vh;
+  width: 100%;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/banner/banner-index.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  header p {
+    font-family: 'Vujahday Script', cursive;
+    font-weight: bold;
+    font-size: 7vh; }
+
+.btn {
+  margin: 1vh; }
+
+#cart-button {
+  position: absolute;
+  right: 5vh; }
+  #cart-button #cart-icon {
+    display: flex;
+    padding: 1vh 2vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    background-color: rgba(0, 0, 0, 0.548); }
+    #cart-button #cart-icon p {
+      font-family: calibri;
+      font-size: 5vh; }
+    #cart-button #cart-icon img {
+      width: 50px;
+      height: 50px; }
+    #cart-button #cart-icon:hover {
+      cursor: pointer; }
+
+#cart {
+  position: absolute;
+  right: 5vh;
+  top: 15vh;
+  border: 1px solid #7c047c;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.87);
+  display: none; }
+  #cart #cart-title {
+    display: flex;
+    align-items: center;
+    border: 1px solid black; }
+    #cart #cart-title p {
+      font-size: 3vh;
+      font-family: calibri;
+      padding: 2vh 1vw;
+      width: 20%; }
+    #cart #cart-title .product-name {
+      width: 50%; }
+    #cart #cart-title .trash {
+      width: 50px;
+      height: 50px;
+      background-color: #eb3453;
+      padding: 10px 10px;
+      border-radius: 10px; }
+      #cart #cart-title .trash:hover {
+        background-color: #dd2140;
+        cursor: pointer; }
+  #cart .cart-product {
+    display: flex;
+    align-items: center;
+    border: 1px solid black; }
+    #cart .cart-product p {
+      font-size: 3vh;
+      font-family: calibri;
+      padding: 2vh 1vw;
+      width: 20%;
+      font-weight: lighter; }
+    #cart .cart-product .product-name {
+      width: 50%; }
+    #cart .cart-product #cantidad {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2vh 1vw;
+      width: 20%; }
+      #cart .cart-product #cantidad p {
+        padding: 0; }
+    #cart .cart-product .trash {
+      width: 50px;
+      height: 50px;
+      background-color: #eb3453;
+      padding: 10px 10px;
+      border-radius: 10px; }
+      #cart .cart-product .trash:hover {
+        background-color: #dd2140;
+        cursor: pointer; }
+    #cart .cart-product #controller-sum {
+      padding: 0 1vh;
+      font-size: 5vh;
+      background-color: rgba(255, 255, 255, 0.075);
+      text-align: center;
+      margin: 0 1vh; }
+      #cart .cart-product #controller-sum:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.26); }
+    #cart .cart-product #controller-res {
+      padding: 0 1vh;
+      font-size: 5vh;
+      background-color: rgba(255, 255, 255, 0.075);
+      text-align: center;
+      margin: 0 1vh; }
+      #cart .cart-product #controller-res:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.26); }
+    #cart .cart-product #buy {
+      background-color: rgba(20, 243, 50, 0.596);
+      text-align: center;
+      padding: 1vh 1vh;
+      border-radius: 10px; }
+      #cart .cart-product #buy:hover {
+        cursor: pointer;
+        background-color: rgba(20, 243, 50, 0.849); }
+
+#box-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10vh 2vw; }
+  #box-products .product {
+    width: 30%;
+    -webkit-box-shadow: 3px 1px 5px 1px rgba(0, 0, 0, 0.49);
+    box-shadow: 3px 1px 5px 1px rgba(0, 0, 0, 0.49);
+    margin: 5vh 1vw;
+    background-color: white; }
+    #box-products .product:hover {
+      -webkit-box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.53);
+      box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.53); }
+    #box-products .product img {
+      width: 100%; }
+    #box-products .product .data-product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2vh 1vw; }
+      #box-products .product .data-product p {
+        width: 100%;
+        font-size: 4vh;
+        text-align: left;
+        margin: 1vh 0; }
+      #box-products .product .data-product .add-cart {
+        background-color: #DC3545;
+        color: #e7e7e7;
+        font-size: 3vh;
+        padding: 1vh 1vw;
+        border-radius: 10px; }
+        #box-products .product .data-product .add-cart:hover {
+          background-color: #d82234;
+          color: white;
+          cursor: pointer; }
+
+#box-checkout {
+  padding: 0 2vw; }
+  #box-checkout #personal-information {
+    padding: 5vh 0; }
+    #box-checkout #personal-information h1 {
+      padding: 2vh 0; }
+    #box-checkout #personal-information #formulario-donacion {
+      width: 50%; }

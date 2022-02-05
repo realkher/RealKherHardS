@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin = "anonymous">
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin = "anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Home RealKher Hardstore</title>
+</head>
+<body>
+    <header>
+        <p id="title">RealKher Hardstore</p>
+    </header>
+    <div id="box-checkout">
+        <div id="personal-information">
+            <h1>Porfavor LLene el siguiente formulario para continuar con la compra:</h1>
+            <form id = "formulario-donacion" action="" method="post">
+                <div class = "mb-3">
+                    <label for = "inputName" class = "form-label">Nombre y Apellido</label>
+                    <input type = "text" class = "form-control" id = "inputName" aria-describedby = "nameHelp" name = "name" minlength="3" required>
+                    <div id = "nameHelp" class = "form-text">Recuerda poner su nombre y apellido como aparece en su tarjeta</div>
+                </div>    
+                <div class = "mb-3">
+                    <label for = "inputMonto" class = "form-label">Monto a pagar</label>
+                    <div class = "col-auto">
+                        <label class = "visually-hidden" for = "autoSizingInputGroup">Monto</label>
+                        <div class = "input-group">
+                            <div class = "input-group-text">$</div>        
+                            <input class = "form-control" id = "inputMonto" aria-label = "Default select example" name = "monto" required readonly>
+                        </div>
+                    </div>
+                    <div id = "montoHelp" class = "form-text"></div>
+                </div>
+                <div class = "mb-3">
+                    <label for = "inputTarjeta" class = "form-label">Numero de Tarjeta</label>
+                    <input type = "text" class = "form-control" id = "inputTarjeta" aria-describedby = "tarjetaHelp" name = "tarjeta" minlength="16" maxlength="16" required>
+                    <div id = "tarjetaHelp" class = "form-text">16 dígitos</div>
+                </div>
+                <div class = "mb-3">
+                    <label for = "inputCaducidad" class = "form-label">Fecha de Caducidad</label>
+                    <input type = "text" class = "form-control" id = "inputCaducidad" aria-describedby = "caducidadHelp" name = "caducidad" minlength="4" maxlength="4" required>
+                    <div id = "caducidadHelp" class = "form-text">formato mmaa sin espacios ni barras</div>
+                </div>
+                <div class = "mb-3">
+                    <label for = "inputCodigo" class = "form-label">Código de seguridad</label>
+                    <input type = "text" class = "form-control" id = "inputCodigo" aria-describedby = "codigoHelp" name = "codigo" minlength="3" maxlength="3" required>
+                    <div id = "codigoHelp" class = "form-text">3 dígitos</div>
+                </div>
+                <div class = "mb-3 form-check">
+                    <input type = "checkbox" class = "form-check-input" id = "inputCheck" required>
+                    <label class = "form-check-label" for = "inputCheck">Acepto los términos y condiciones</label>
+                    <div id = "checkHelp" class = "form-text"></div>
+                </div>
+                <div class = "mb-3">
+                    <button type = "submit" class = "btn btn-primary" id = "submit">Continuar</button>
+                    <button type = "button" class = "btn btn-secondary" id = "cancelar">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../js/modules/validarForm.js"></script>
+    <script type="module" src="../js/modules/controlCheckout.js"></script>
+    <script type="module" src="../js/checkout.js"></script>
+</body>
+</html>
